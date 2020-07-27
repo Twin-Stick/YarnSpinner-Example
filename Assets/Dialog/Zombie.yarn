@@ -1,0 +1,15 @@
+title: Zombie.Start
+tags: 
+colorID: 0
+position: 729,195
+---
+Zombie: Uuuuugghhhhh!
+Jaimie: Huh?
+Zombie: Uuuuuggghhhhhhh!!!!!
+-> Are you OK?
+    Zombie: Braaaaains!
+    Jaimie: Ok... Time to go!
+-> Uuggfubrrr?
+    Zombie: Yeeeaaahhhh!
+    Jaimie: Ah-ha! I knew I understood!
+===

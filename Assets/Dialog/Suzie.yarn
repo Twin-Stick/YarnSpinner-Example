@@ -1,0 +1,32 @@
+title: Suzie.Start
+tags: 
+colorID: 0
+position: 678,64
+---
+Suzie: Hi Jaimie!!!!!!
+Jaimie: Oh wow, you seem excited today.
+Suzie: YES!!! Want to know why???
+[[ Not Particularly |Suzie.NotInterested]]
+[[ Yes!!! Tell me! |Suzie.Interested]]
+===
+title: Suzie.NotInterested
+tags: 
+colorID: 0
+position: 380,339
+---
+Suzie: That's OK - I know you get busy!
+Jaimie: Oh - awesome, thanks for understanding.
+Suzie: You bet sis - talk soon?
+Jaimie: Of course!
+===
+title: Suzie.Interested
+tags: 
+colorID: 0
+position: 970,319
+---
+Suzie: Well!!! First, it started when I woke up...
+Suzie: I had so much energy for some weird reason, so I went for a run.
+Suzie: Then on my run I...
+Jaimie: I'm so sorry I asked...
+Suzie: Huh... And suddenly my day become flat.
+===

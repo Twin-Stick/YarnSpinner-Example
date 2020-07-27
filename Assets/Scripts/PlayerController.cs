@@ -65,6 +65,11 @@ public class PlayerController : MonoBehaviour
         spriteRenderer.flipX = moveCurrent.x < 0;
     }
 
+    public void OnDialogEnd()
+    {
+        isInDialog = false;
+    }
+
     void Interact()
     {
         // Check input
@@ -75,7 +80,7 @@ public class PlayerController : MonoBehaviour
             {
                 // Start dialog
                 isInDialog = true;
-                DialogUI.Instance.Show();
+                DialogUI.Instance.dialogueRunner.StartDialogue(NPC.ActiveNPC.YarnStartNode);
             }
         }
     }

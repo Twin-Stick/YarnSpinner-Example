@@ -131,6 +131,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1551349223266523957, guid: 07c0fe12c328e994281e9db53fb24ce7,
+        type: 3}
+      propertyPath: yarnDialog
+      value: 
+      objectReference: {fileID: 2480198943629176163, guid: 280fbeb3f34724c4cbaef37bb8bf5111,
+        type: 3}
+    - target: {fileID: 1551349223266523957, guid: 07c0fe12c328e994281e9db53fb24ce7,
+        type: 3}
+      propertyPath: yarnStartNode
+      value: Suzie.Start
+      objectReference: {fileID: 0}
     - target: {fileID: 5143802907184325292, guid: 07c0fe12c328e994281e9db53fb24ce7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -283,6 +294,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1551349223266523957, guid: 07c0fe12c328e994281e9db53fb24ce7,
+        type: 3}
+      propertyPath: yarnDialog
+      value: 
+      objectReference: {fileID: 2480198943629176163, guid: 15762acdc6f0a694a8d046c4c12c3984,
+        type: 3}
+    - target: {fileID: 1551349223266523957, guid: 07c0fe12c328e994281e9db53fb24ce7,
+        type: 3}
+      propertyPath: yarnStartNode
+      value: Zombie.Start
+      objectReference: {fileID: 0}
     - target: {fileID: 5143802907184325292, guid: 07c0fe12c328e994281e9db53fb24ce7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -589,7 +611,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 252838838}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1689449651}
+        m_TargetAssemblyTypeName: Yarn.Unity.DialogueUI, YarnSpinner.Unity
+        m_MethodName: MarkLineComplete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &252838838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4546,6 +4580,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1689449649}
   - component: {fileID: 1689449650}
+  - component: {fileID: 1689449653}
+  - component: {fileID: 1689449651}
+  - component: {fileID: 1689449652}
   m_Layer: 5
   m_Name: Dialog UI
   m_TagString: Untagged
@@ -4589,6 +4626,177 @@ MonoBehaviour:
   speakerPortrait: {fileID: 1914036541}
   txt_Dialog: {fileID: 360872740}
   txt_SpeakerName: {fileID: 238258979}
+  dialogueRunner: {fileID: 1689449653}
+--- !u!114 &1689449651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689449648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04317fce65da54f4997a5c4465b4e93c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueContainer: {fileID: 1689449648}
+  textSpeed: 0.025
+  optionButtons:
+  - {fileID: 2036231606}
+  - {fileID: 902059203}
+  - {fileID: 1569827310}
+  onDialogueStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onDialogueEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3777664510190163816}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnDialogEnd
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onLineStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 252838834}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onLineFinishDisplaying:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 252838834}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 252838837}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+        m_MethodName: Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onLineUpdate:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 360872740}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onLineEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  onOptionsStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 252838834}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2036231606}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+        m_MethodName: Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onOptionsEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  onCommand:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1689449652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689449648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610c541718d694070a21327d1ae62e75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultVariables: []
+  debugTextView: {fileID: 0}
+--- !u!114 &1689449653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689449648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yarnScripts: []
+  textLanguage: 
+  variableStorage: {fileID: 1689449652}
+  dialogueUI: {fileID: 1689449651}
+  startNode: Start
+  startAutomatically: 0
+  onNodeStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  onDialogueComplete:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1812841789
 GameObject:
   m_ObjectHideFlags: 0
@@ -7343,6 +7551,18 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 2171993202090769849, guid: d98d37e34f25bb04bb2cc997886db046, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d98d37e34f25bb04bb2cc997886db046, type: 3}
+--- !u!114 &3777664510190163816 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3777664509676303020, guid: d98d37e34f25bb04bb2cc997886db046,
+    type: 3}
+  m_PrefabInstance: {fileID: 3777664510190163815}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98394305928262947a4cf671bb98dddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5143802906948555938
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7350,6 +7570,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1551349223266523957, guid: 07c0fe12c328e994281e9db53fb24ce7,
+        type: 3}
+      propertyPath: yarnDialog
+      value: 
+      objectReference: {fileID: 2480198943629176163, guid: d011393248f45ee4f8015105d6e83b82,
+        type: 3}
+    - target: {fileID: 1551349223266523957, guid: 07c0fe12c328e994281e9db53fb24ce7,
+        type: 3}
+      propertyPath: yarnStartNode
+      value: Billy.Start
+      objectReference: {fileID: 0}
     - target: {fileID: 5143802907184325292, guid: 07c0fe12c328e994281e9db53fb24ce7,
         type: 3}
       propertyPath: m_LocalPosition.x

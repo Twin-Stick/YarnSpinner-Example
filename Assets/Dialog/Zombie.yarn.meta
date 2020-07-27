@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 15762acdc6f0a694a8d046c4c12c3984
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-AU
+  stringIDs:
+  - Zombie-Zombie.Start-0
+  - Zombie-Zombie.Start-1
+  - Zombie-Zombie.Start-2
+  - Zombie-Zombie.Start-3
+  - Zombie-Zombie.Start-4
+  - Zombie-Zombie.Start-5
+  - Zombie-Zombie.Start-6
+  - Zombie-Zombie.Start-7
+  - Zombie-Zombie.Start-8
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 15762acdc6f0a694a8d046c4c12c3984,
+    type: 3}
+  localizations: []

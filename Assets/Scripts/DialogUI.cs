@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Yarn.Unity;
 
 public class DialogUI : Singleton<DialogUI>
 {
@@ -11,9 +12,11 @@ public class DialogUI : Singleton<DialogUI>
     [SerializeField] TextMeshProUGUI txt_Dialog, txt_SpeakerName;
 #pragma warning restore 0649
 
+    public DialogueRunner dialogueRunner;
+
     private void Start()
     {
-        Hide();
+        //Hide();
     }
 
     public void Show()

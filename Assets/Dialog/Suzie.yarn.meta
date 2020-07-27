@@ -1,0 +1,32 @@
+fileFormatVersion: 2
+guid: 280fbeb3f34724c4cbaef37bb8bf5111
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-AU
+  stringIDs:
+  - Suzie-Suzie.Start-0
+  - Suzie-Suzie.Start-1
+  - Suzie-Suzie.Start-2
+  - Suzie-Suzie.Start-3
+  - Suzie-Suzie.Start-4
+  - Suzie-Suzie.NotInterested-5
+  - Suzie-Suzie.NotInterested-6
+  - Suzie-Suzie.NotInterested-7
+  - Suzie-Suzie.NotInterested-8
+  - Suzie-Suzie.Interested-9
+  - Suzie-Suzie.Interested-10
+  - Suzie-Suzie.Interested-11
+  - Suzie-Suzie.Interested-12
+  - Suzie-Suzie.Interested-13
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 280fbeb3f34724c4cbaef37bb8bf5111,
+    type: 3}
+  localizations: []
