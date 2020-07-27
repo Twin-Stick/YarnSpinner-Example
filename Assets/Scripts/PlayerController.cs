@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 #pragma warning disable 0649
     [SerializeField, Header("Movement")] float moveSpeed;
     [SerializeField, Range(0,1)] float moveDampen;
+    [SerializeField] SpeakerData speakerData;
 #pragma warning restore 0649
 
     Vector2 moveVelocity, moveTarget, moveCurrent;
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        DialogUI.Instance.AddSpeaker(speakerData);
     }
 
     // Update is called once per frame

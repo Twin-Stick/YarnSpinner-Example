@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a92b8af0de80bc24fb7f60dd4ad0f898, type: 3}
+  m_Name: Jaimie
+  m_EditorClassIdentifier: 
+  speakerName: Jaimie
+  portraitNeutral: {fileID: 21300000, guid: d7fb8f760bab4ef408deabe856f4411b, type: 3}
+  portraitFocused: {fileID: 21300000, guid: 4fd08e709b8d2dd429368357e34fa887, type: 3}
+  portraitShocked: {fileID: 21300000, guid: 6f8bee3b93c3d7e4ea1cb9a1afa0aad3, type: 3}

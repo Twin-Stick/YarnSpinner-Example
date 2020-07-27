@@ -1,15 +1,26 @@
 title: Zombie.Start
 tags: 
 colorID: 0
-position: 729,195
+position: 476,199
 ---
-Zombie: Uuuuugghhhhh!
-Jaimie: Huh?
-Zombie: Uuuuuggghhhhhhh!!!!!
+<<SetSpeaker Zombie>>
+Uuuuuggghhhhhhh!
+<<SetSpeaker Jaimie>>
+Huh?
+<<SetSpeaker Zombie focused>>
+Uuuuuggghhhhhhh!!!!!
 -> Are you OK?
-    Zombie: Braaaaains!
-    Jaimie: Ok... Time to go!
+    <<SetSpeaker Jaimie>>
+    Are you OK Zombie? I can't understand you.
+    <<SetSpeaker Zombie focused>>
+    Braaaaains!
+    <<SetSpeaker Jaimie shocked>>
+    Ok... Time to go!
 -> Uuggfubrrr?
-    Zombie: Yeeeaaahhhh!
-    Jaimie: Ah-ha! I knew I understood!
+    <<SetSpeaker Jaimie>>
+    (OK... Let me try something...) Uuggfubrrr, uurraagg!
+    <<SetSpeaker Zombie shocked>>
+    Yeeeaaahhhh!
+    <<SetSpeaker Jaimie shocked>>
+    Ah-ha! I knew I understood!
 ===

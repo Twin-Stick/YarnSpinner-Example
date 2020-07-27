@@ -3,9 +3,16 @@ tags:
 colorID: 0
 position: 779,352
 ---
-Billy: Hi Jaimie, how are you today?
+<<SetSpeaker Billy>>
+Hi Jaimie, how are you today?
 -> Fantastic
-    Billy: Oh wow, I wish I was doing that good!
+    <<SetSpeaker Jaimie>>
+    OMG - I am like.... SOOOO amazing today! Thanks so much for asking!
+    <<SetSpeaker Billy>>
+    Oh wow, I wish I was doing that good!
 -> So So...
-    Billy: ..... I think I'll leave that alone
+    <<SetSpeaker Jaimie focused>>
+    Well to be honest with you, I'm really not feeling very positive about life.....
+    <<SetSpeaker Billy shocked>>
+    ..... I think I'll leave that alone
 ===

@@ -11,12 +11,14 @@ public class NPC : MonoBehaviour
     [SerializeField] GameObject chatBubble;
     [SerializeField] string yarnStartNode = "Start";
     [SerializeField] YarnProgram yarnDialog;
+    [SerializeField] SpeakerData speakerData;
 #pragma warning restore 0649
 
     private void Start()
     {
         chatBubble.SetActive(false);
         DialogUI.Instance.dialogueRunner.Add(yarnDialog);
+        DialogUI.Instance.AddSpeaker(speakerData);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
