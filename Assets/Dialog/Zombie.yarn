@@ -8,6 +8,7 @@ Uuuuuggghhhhhhh!
 <<SetSpeaker Jaimie>>
 Huh?
 <<SetSpeaker Zombie focused>>
+<<AutoContinue>>
 Uuuuuggghhhhhhh!!!!!
 -> Are you OK?
     <<SetSpeaker Jaimie>>

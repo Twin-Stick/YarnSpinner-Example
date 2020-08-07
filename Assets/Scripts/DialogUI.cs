@@ -6,21 +6,35 @@ using TMPro;
 using Yarn.Unity;
 
 public class DialogUI : Singleton<DialogUI>
-{
-    public DialogueRunner Runner { get; private set; }
-
+{    
 #pragma warning disable 0649
     [SerializeField] Image speakerPortrait;
     [SerializeField] TextMeshProUGUI txt_Dialog, txt_SpeakerName;
 #pragma warning restore 0649
 
     public DialogueRunner dialogueRunner;
+    DialogueUI dialogueUI;
+
     Dictionary<string, SpeakerData> speakerDatabase = new Dictionary<string, SpeakerData>();
+
+    bool autoContinue = false;
 
     private void Awake()
     {
-        Runner = GetComponent<DialogueRunner>();
-        Runner.AddCommandHandler("SetSpeaker", SetSpeakerInfo);
+        dialogueRunner = GetComponent<DialogueRunner>();
+        dialogueRunner.AddCommandHandler("SetSpeaker", SetSpeakerInfo);
+        dialogueRunner.AddCommandHandler("AutoContinue", (string[] s) => autoContinue = true);
+        dialogueUI = GetComponent<DialogueUI>();
+        dialogueUI.onLineFinishDisplaying.AddListener(AutoContinueCheck);
+    }
+
+    void AutoContinueCheck()
+    {
+        if (autoContinue)
+        {
+            dialogueUI.MarkLineComplete();
+            autoContinue = false;
+        }
     }
 
     public void AddSpeaker(SpeakerData data)

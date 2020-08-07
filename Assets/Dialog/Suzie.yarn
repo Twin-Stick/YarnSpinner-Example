@@ -8,6 +8,7 @@ Hi Jaimie!!!!!!!
 <<SetSpeaker Jaimie>>
 Oh wow, you seem excited today.
 <<SetSpeaker Suzie>>
+<<AutoContinue>>
 YES!!! Want to know why???
 [[ Not Particularly | Suzie.NotInterested]]
 [[Yes!!! Tell me! | Suzie.Interested]]

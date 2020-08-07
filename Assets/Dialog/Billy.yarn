@@ -4,6 +4,7 @@ colorID: 0
 position: 779,352
 ---
 <<SetSpeaker Billy>>
+<<AutoContinue>>
 Hi Jaimie, how are you today?
 -> Fantastic
     <<SetSpeaker Jaimie>>
